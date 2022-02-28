@@ -1,0 +1,13 @@
+@use './variables.scss';
+
+/* theme color */
+$--color-primary: $color-primary; // pink-500
+$--color-success: $color-success; // green-500
+$--color-warning: $color-warning; // yellow-500
+$--color-danger: $color-danger; // red-500
+$--color-info: $color-info; // gray-400
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import '~element-ui/packages/theme-chalk/src/index';

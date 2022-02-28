@@ -1,0 +1,298 @@
+@use "./mixins.scss";
+@use "./variables.scss";
+
+@font-face {
+  font-family: "BIZ-UDGothic";
+  src: url("/fonts/BIZ-UDGothic/BIZ-UDGothic.eot");
+  src: url("/fonts/BIZ-UDGothic/BIZ-UDGothic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/BIZ-UDGothic/BIZ-UDGothic.woff2") format("woff2"),
+    url("/fonts/BIZ-UDGothic/BIZ-UDGothic.woff") format("woff"),
+    url("/fonts/BIZ-UDGothic/BIZ-UDGothic.ttf") format("truetype"),
+    url("/fonts/BIZ-UDGothic/BIZ-UDGothic.svg#BIZ-UDGothic") format("svg");
+
+  // src: url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.eot');
+  // src: url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.eot?#iefix') format('embedded-opentype'),
+  //   url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.woff2') format('woff2'),
+  //   url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.woff') format('woff'),
+  //   url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.ttf') format('truetype'),
+  //   url('/fonts/BIZ-UDGothic/BIZ-UDGothic-Bold.svg#BIZ-UDGothic-Bold') format('svg');
+}
+
+#app {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+// fonts
+.T48B_56 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.T48M_56 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.T48R_56 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.T30B_38 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T30M_38 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T30R_38 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T24B_32 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  //font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T24M_32 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T24R_32 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T20B_28 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  //font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T20M_28 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T20R_28 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T18B_26 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  //font-weight: bold;
+  font-size: 28px;
+  line-height: 26px;
+}
+
+.T18M_26 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.T18R_26 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T16B_24 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T16M_24 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T16R_24 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T14B_20 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T14M_20 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T14R_20 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T12B_16 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.T12M_16 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.T12R_16 {
+  font-family: "BIZ-UDGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+// text color
+.text-black-light {
+  color: #222222;
+}
+
+// el-item
+.el-item {
+  $w-label: 120px; // default width
+  margin-bottom: 22px;
+
+  &__label {
+    width: $w-label;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #222222;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    margin-left: $w-label;
+    padding: 0 12px;
+    line-height: 40px;
+    position: relative;
+    font-size: 14px;
+
+    &::before {
+      display: table;
+      content: "";
+    }
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  &::before,
+  &::after {
+    display: table;
+    content: "";
+  }
+}
+
+// transitions
+.tr-fade-enter-active,
+.tr-fade-leave-active {
+  // opacity: 1;
+  visibility: visible;
+  // transform: scaleY(1);
+  transition: all 0.1s ease;
+}
+.tr-fade-enter,
+.tr-fade-leave-to {
+  // opacity: 0;
+  visibility: collapse;
+  // transform: scaleY(0);
+}
+
+.title-system {
+  color: $color-primary;
+  font-family: "Meiryo UI";
+}
+
+.result-table .el-table, .page-content .el-table {
+  color: #222222;
+}
+
+.el-table th.el-table__cell > .cell {
+  color: #222222;
+}
+
+.el-form-item__label, .el-radio, .el-checkbox, .el-radio, .el-textarea__inner, .el-input__inner {
+  color: #222222 !important;
+}
+
